@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Just a T.A.D.</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ravi+Prakash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><b>Just a T.A.D.</b></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#team">Team</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#documents">Documents</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Intro -->
+<section id="intro" class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p><b><span style="font-size:100px;font-family: 'Open Sans', sans-serif;">Just a T.A.D.</span></b></p>
+                <p><span style="font-size: 18px;">Traffic data needs to be more comprehensive as more and more cars
+                are on the roads. Just a T.A.D. (Traffic Analysis Drone) empowers transportation authorities by providing
+                car density and spacing data.
+                </span></p>
+                <!--random button
+                <a class="btn btn-default page-scroll" href="#about">button that could be replaced by a few scrolls</a>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p><b><span style="font-size:40px;font-family: 'Open Sans', sans-serif;">About</span></b></p>
+                <br><br>
+                <p><span style="font-size: 15px;">Current traffic data collection methods such as FCD (Floating Car Data)
+                    and video cameras are expensive and/or insufficient. Our project, Just a T.A.D, utilizes a UAV (Unmanned
+                    Aerial Vehicle) to capture aerial images/video of traffic flow on highways for image processing to
+                    calculate car density and spacing.
+                </span></p>
+                <br><br>
+                <img src="img/blockdiagram.jpg" width="539" height="422">
+                <br><br><br>
+                <p><span style="font-size: 15px;">The Raspberry Pi with the 3G USB dongle and camera is mounted onto the
+                    UAV, 3DR Iris+. The drone flies above highway traffic to capture images/videos for image processing on
+                    the server. The images/videos are then sent to the data server via 3G. The image processing utilizes
+                    background subtraction, cropping, and vehicle detection to calculate car density and spacing. The calculations
+                    are then sent to a web browser.
+                </span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team -->
+<section id="team" class="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p><b><span style="font-size:40px;font-family: 'Open Sans', sans-serif;">Team</span></b></p>
+                <br><br>
+                <div class="col-sm-6">
+                    <h2>Cyril Caparanga (CSE)</h2><br>
+                    <img src="img/cyril.jpg" height="172"><br><br>
+                    <a target="_blank" href="https://www.facebook.com/cyril.caparanga?fref=ts">
+                        <img src="img/facebook.png" height="35px">
+                    </a>
+                    <img src="img/linkedin.png" height="35px"><br><br>
+                    <h2>Chris Barbeau (CSE)</h2><br>
+                    <img src="img/chris.jpg" height="172"><br><br><br>
+<!--                    <a target="_blank" href="https://www.facebook.com/cyril.caparanga?fref=ts">
+                        <img src="img/facebook.png" height="35px">
+                    </a>-->
+                    <img src="img/linkedin.png" height="35px"><br>
+                </div>
+                <div class="col-sm-6">
+                    <h2>Alex Dunyak (CSE)</h2><br>
+                    <img src="img/alex.jpg" height="172"><br><br>
+<!--                    <a target="_blank" href="https://www.facebook.com/cyril.caparanga?fref=ts">
+                        <img src="img/facebook.png" height="35px">
+                    </a>-->
+                    <img src="img/linkedin.png" height="35px"><br><br>
+                    <h2>Matthew Shin(CSE)</h2><br>
+                    <img src="img/matt.jpg" height="172"><br><br><br>
+                    <a target="_blank" href="https://www.facebook.com/taesooshiin">
+                        <img src="img/facebook.png" height="35px">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/matthew-shin-b94657111">
+                        <img src="img/linkedin.png" height="35px"><br>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Documents -->
+<section id="documents" class="documents">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p><b><span style="font-size:40px;font-family: 'Open Sans', sans-serif;">Documents</span></b></p>
+                <br><br>
+                <p class="documents-item"> <span class="glyphicon glyphicon-file" aria="true"> <a target="_blank" href="files/PDR.pdf"><b>PDR: Preliminary Design Review</b></a></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
