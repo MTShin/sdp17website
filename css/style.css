@@ -47,7 +47,7 @@ html {
     background: #fff;
 }
 
-.documents {
+.resources {
     min-height: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -55,7 +55,7 @@ html {
     background: #eee;
 }
 
-.documents-item a {
+.resources-item a {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: #204d74;

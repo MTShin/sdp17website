@@ -46,7 +46,7 @@
                     <a class="page-scroll" href="#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#documents">Documents</a>
+                    <a class="page-scroll" href="#resources">Resources</a>
                 </li>
             </ul>
         </div>
@@ -79,13 +79,16 @@
                     calculate car density and spacing.
                 </span></p>
                 <br><br>
-                <img src="img/blockdiagram.jpg" class="img-responsive center-block">
+                <img src="img/blockdiagram.png" class="img-responsive center-block">
                 <br><br><br>
-                <p><span style="font-size: 15px;">The Raspberry Pi with the 3G USB dongle and camera is mounted onto the
+                <p><span style="font-size: 15px;">The Raspberry Pi along with the 3G USB dongle and camera is mounted onto the
                     UAV, 3DR Iris+. The drone flies above highway traffic to capture images/videos for image processing on
-                    the server. The images/videos are then sent to the data server via 3G. The image processing utilizes
-                    background subtraction, cropping, and vehicle detection to calculate car density and spacing. The calculations
-                    are then sent to a web browser.
+                    the Raspberry Pi. The image processing utilizes background subtraction, cropping, and vehicle detection in
+                    combination with more fine-turning techniques dilation, erosion, opening/closing, and contour detection
+                    to calculate car density and spacing. The processed data is then sent to the data server via 3G which is
+                    hosted on the cloud to remove as much load on the Raspberry Pi as possible for the intensive image processing.
+                    The web browser, which is also hosted on the cloud, queries the database to display its contents to the end
+                    user in an easy to access UI.
                 </span></p>
             </div>
         </div>
@@ -133,13 +136,15 @@
     </div>
 </section>
 
-<section id="documents" class="documents">
+<section id="resources" class="resources">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <p><b><span style="font-size:40px;font-family: 'Open Sans', sans-serif;">Documents</span></b></p>
+                <p><b><span style="font-size:40px;font-family: 'Open Sans', sans-serif;">Resources</span></b></p>
                 <br><br>
-                <p class="documents-item"> <span class="glyphicon glyphicon-file" aria="true"> <a target="_blank" href="files/PDR.pdf"><b>PDR: Preliminary Design Review</b></a></span></p>
+                <p class="resources-item"> <span class="glyphicon glyphicon-cloud" aria="true"> <a target="_blank" href="https://justatad.herokuapp.com/#/"><b>Just a T.A.D. Database</b></a></span></p>
+                <p class="resources-item"> <span class="glyphicon glyphicon-file" aria="true"> <a target="_blank" href="files/TAD - PDR.pdf"><b>PDR: Preliminary Design Review</b></a></span></p>
+                <p class="resources-item"> <span class="glyphicon glyphicon-file" aria="true"> <a target="_blank" href="files/TAD - MDR.pdf"><b>MDR: Midway Design Review</b></a></span></p>
             </div>
         </div>
     </div>
